@@ -1,0 +1,83 @@
+[
+  {
+    "categoryName": "Sports Cars",
+    "img": "https://i.ibb.co/T2cpBd5/888.jpg",
+    "price": "20.00",
+    "description": "Experience the thrill of speed and performance with our collection of sports cars. Feel the adrenaline rush as you take control of powerful machines designed to deliver an exhilarating driving experience. Whether it's the iconic Ferrari 488 GTB with its top speed of 205 mph or the stunning Lamborghini Aventador with its striking design and V12 engine, these high-performance vehicles will leave you breathless.",
+    "cars": [
+      {
+        "_id": 1,
+        "brand": "Ferrari",
+        "model": "488 GTB",
+        "price": 2500,
+        "rating": 4.8,
+        "picture": "https://example.com/ferrari-488.jpg",
+        "carDetails": "High-performance sports car with a top speed of 205 mph."
+      },
+      {
+        "_id": 2,
+        "brand": "Lamborghini",
+        "model": "Aventador",
+        "price": 2800,
+        "rating": 4.7,
+        "picture": "https://example.com/lamborghini-aventador.jpg",
+        "carDetails": "Iconic supercar with a V12 engine and striking design."
+      }
+    ]
+  },
+  {
+    "categoryName": "Battery Charge",
+    "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+    "price": "20.00",
+    "description": "Never run out of power with our reliable battery chargers. Whether you're at home or on the go, our chargers will keep your devices powered up and ready for action. With fast charging capabilities and versatile compatibility, you can trust our chargers to provide a steady and efficient charge to your smartphones, tablets, and other electronic devices. Stay connected and powered up with our high-quality battery chargers.",
+    "cars": [
+      {
+        "_id": 1,
+        "brand": "Porsche",
+        "model": "911 Turbo",
+        "price": 2200,
+        "rating": 4.6,
+        "picture": "https://example.com/porsche-911.jpg",
+        "carDetails": "Legendary sports car known for its speed and precision."
+      },
+      {
+        "_id": 2,
+        "brand": "Audi",
+        "model": "R8",
+        "price": 2400,
+        "rating": 4.5,
+        "picture": "https://example.com/audi-r8.jpg",
+        "carDetails": "Exhilarating performance car with a distinctive design."
+      }
+    ]
+  },
+  {
+    "categoryName": "Off-Road Vehicles",
+    "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+    "price": "200.00",
+    "description": "Conquer any terrain with our rugged off-road vehicles. Designed to handle the toughest challenges, these versatile SUVs will take you off the beaten path and into adventure. From the Jeep Wrangler, a true off-road icon known for its versatility and capability, to the Toyota Land Cruiser, a robust 4x4 vehicle built to tackle various terrains, our off-road vehicles are ready to explore the great outdoors with you.",
+    "cars": [
+      {
+        "_id": 1,
+        "brand": "Jeep",
+        "model": "Wrangler",
+        "price": 1800,
+        "rating": 4.4,
+        "picture": "https://example.com/jeep-wrangler.jpg",
+        "carDetails": "Versatile and rugged SUV designed for off-road adventures."
+      },
+      {
+        "_id": 2,
+        "brand": "Toyota",
+        "model": "Land Cruiser",
+        "price": 2000,
+        "rating": 4.3,
+        "picture": "https://example.com/toyota-land-cruiser.jpg",
+        "carDetails": "Robust and capable 4x4 vehicle for various terrains."
+      }
+    ]
+  }
+]
+
+
+  
