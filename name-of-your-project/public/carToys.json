@@ -11,7 +11,7 @@
         "model": "488 GTB",
         "price": 2500,
         "rating": 4.8,
-        "picture": "https://example.com/ferrari-488.jpg",
+        "picture": "https://i.ibb.co/xJ4vK6m/OIP.jpg",
         "carDetails": "High-performance sports car with a top speed of 205 mph."
       },
       {
@@ -20,40 +20,40 @@
         "model": "Aventador",
         "price": 2800,
         "rating": 4.7,
-        "picture": "https://example.com/lamborghini-aventador.jpg",
+        "picture": "https://i.ibb.co/p0PH95p/aa58ff13-86bb-4fd1-9204-0476f29d220f-f43c4cba35.jpg",
         "carDetails": "Iconic supercar with a V12 engine and striking design."
       }
     ]
   },
   {
-    "categoryName": "Battery Charge",
-    "img": "https://i.ibb.co/ydCbDN3/5555.jpg",
+    "categoryName": "Truck",
+    "img": "https://i.ibb.co/pWLtYL2/OIP-3.jpg",
     "price": "20.00",
     "description": "Never run out of power with our reliable battery chargers. Whether you're at home or on the go, our chargers will keep your devices powered up and ready for action. With fast charging capabilities and versatile compatibility, you can trust our chargers to provide a steady and efficient charge to your smartphones, tablets, and other electronic devices. Stay connected and powered up with our high-quality battery chargers.",
     "cars": [
       {
         "_id": 1,
-        "brand": "Porsche",
+        "brand": "Plastic toy Truck",
         "model": "911 Turbo",
         "price": 2200,
         "rating": 4.6,
-        "picture": "https://example.com/porsche-911.jpg",
+        "picture": "https://i.ibb.co/pzxc96Q/OIP-2.jpg",
         "carDetails": "Legendary sports car known for its speed and precision."
       },
       {
         "_id": 2,
-        "brand": "Audi",
+        "brand": "Dump Girbage Track",
         "model": "R8",
         "price": 2400,
         "rating": 4.5,
-        "picture": "https://example.com/audi-r8.jpg",
+        "picture": "https://i.ibb.co/pWLtYL2/OIP-3.jpg",
         "carDetails": "Exhilarating performance car with a distinctive design."
       }
     ]
   },
   {
     "categoryName": "Off-Road Vehicles",
-    "img": "https://i.ibb.co/R6Z2nFM/55.jpg",
+    "img": "https://i.ibb.co/8myhmkX/1-64-Diecast-Alloy-car-model-Jeep-kids-toys-easy.jpgg",
     "price": "200.00",
     "description": "Conquer any terrain with our rugged off-road vehicles. Designed to handle the toughest challenges, these versatile SUVs will take you off the beaten path and into adventure. From the Jeep Wrangler, a true off-road icon known for its versatility and capability, to the Toyota Land Cruiser, a robust 4x4 vehicle built to tackle various terrains, our off-road vehicles are ready to explore the great outdoors with you.",
     "cars": [
@@ -63,7 +63,7 @@
         "model": "Wrangler",
         "price": 1800,
         "rating": 4.4,
-        "picture": "https://example.com/jeep-wrangler.jpg",
+        "picture": "https://i.ibb.co/Ln2b2St/028700030-A-10.jpg",
         "carDetails": "Versatile and rugged SUV designed for off-road adventures."
       },
       {
@@ -72,7 +72,7 @@
         "model": "Land Cruiser",
         "price": 2000,
         "rating": 4.3,
-        "picture": "https://example.com/toyota-land-cruiser.jpg",
+        "picture": "https://i.ibb.co/8myhmkX/1-64-Diecast-Alloy-car-model-Jeep-kids-toys-easy.jpg",
         "carDetails": "Robust and capable 4x4 vehicle for various terrains."
       }
     ]

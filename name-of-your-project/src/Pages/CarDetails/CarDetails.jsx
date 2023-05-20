@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const CarDetails = () => {
+    const carData = useLoaderData()
+    console.log(carData)
     return (
         <div>
-            
+            <h1>Car details</h1>
         </div>
     );
 };

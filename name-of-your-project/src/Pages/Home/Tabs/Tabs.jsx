@@ -13,7 +13,8 @@ const Tabs = ({ car }) => {
     categoryName,
     img,
     description,
-    cars
+    cars,
+    _id
   } = car || {};
   return (
     
@@ -32,7 +33,7 @@ const Tabs = ({ car }) => {
           <p>{singleCar.price}</p>
           <p>{singleCar.rating}</p>
           <div className="card-actions">
-            <Link><button className="btn btn-primary">View Details</button></Link>
+            <Link to={`/carDetails/${singleCar._id}`}><button className="btn btn-primary">View Details</button></Link>
           </div>
         </div>
       </div>

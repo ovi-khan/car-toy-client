@@ -29,7 +29,7 @@ const AddAToy = () => {
     form.reset();
 
     // send data to the server
-    fetch("http://localhost:5000/PostToys", {
+    fetch("http://localhost:5000/postToys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
