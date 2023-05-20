@@ -7,7 +7,8 @@ import Main from '../Layout/Main';
 import CategoryTab from '../Pages/Home/CategoryTab/CategoryTab';
 import AddAToy from '../Pages/AddAToy/AddAToy';
 import CarDetails from '../Pages/CarDetails/CarDetails';
-import LogIn from '../Pages/Login/Login';
+import LogIn from '../Pages/Login/LogIn';
+import SignUp from '../Pages/SignUp/SignUp';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 element: <LogIn></LogIn>
+            },
+            {
+                path: 'signup',
+                element: <SignUp></SignUp>
             },
             {
                 path: 'categoryTab',
