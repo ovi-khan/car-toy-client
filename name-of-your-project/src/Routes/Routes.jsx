@@ -5,6 +5,7 @@ import {
 import Home from '../Pages/Home/Home/Home';
 import Main from '../Layout/Main';
 import CategoryTab from '../Pages/Home/CategoryTab/CategoryTab';
+import AddAToy from '../Pages/AddAToy/AddAToy';
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
+            },
+            {
+                path: 'addatoy',
+                element: <AddAToy></AddAToy>
             },
             {
                 path: 'categoryTab',

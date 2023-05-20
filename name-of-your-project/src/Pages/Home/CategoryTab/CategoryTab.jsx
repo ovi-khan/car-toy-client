@@ -25,14 +25,14 @@ function CategoryTab() {
 
   return (
     <div className="">
-      <h1 className="title text-center mt-5 p-5">Available Car's</h1>
-      <div className="m-0 m-auto border border-success justify-center items-center">
-        <div className="text-center w-100 m-auto">
-          <div className="tabs flex justify-content-center align-items-center">
+      <h1 className="text-center text-4xl text-red-500 font-bold mt-10 mb-10">Available Car's</h1>
+      <div className="">
+        <div className="">
+          <div className="text-center">
             <div
               onClick={() => handleTabClick("Sports Cars")}
               className={`tab  tab2 remote ${
-                activeTab == "Sports Cars" ? " bg-danger text-white" : ""
+                activeTab == "Sports Cars" ? "bg-red-500 rounded font-bold text-white" : ""
               }`}
             >
               Sports Cars
@@ -40,7 +40,7 @@ function CategoryTab() {
             <div
               onClick={() => handleTabClick("Battery Charge")}
               className={`tab  tab2 Offline ${
-                activeTab == "Battery Charge" ? " bg-danger text-white" : ""
+                activeTab == "Battery Charge" ? "bg-red-500 rounded font-bold text-white" : ""
               }`}
             >
               Battery Charge
@@ -48,7 +48,7 @@ function CategoryTab() {
             <div
               onClick={() => handleTabClick("Off-Road Vehicles")}
               className={`tab  tab2 Offline ${
-                activeTab == "Off-Road Vehicles" ? " bg-danger text-white" : ""
+                activeTab == "Off-Road Vehicles" ? "bg-red-500 rounded font-bold text-white" : ""
               }`}
             >
              Off-Road Vehicles
@@ -56,7 +56,7 @@ function CategoryTab() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 mt-5 row">
+      <div className="mx-48 mt-10">
         {carCategories?.map( car => 
           <Tabs 
           car={car}

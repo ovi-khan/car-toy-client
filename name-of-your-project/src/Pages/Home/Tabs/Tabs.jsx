@@ -3,6 +3,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
 // import { FaArrowRight } from "react-icons/fa";
 
 const Tabs = ({ car }) => {
@@ -17,7 +18,7 @@ const Tabs = ({ car }) => {
   return (
     
     
-  <div>
+  <div className="grid lg:grid-cols-2">
       {
       cars?.map(singleCar => 
 
@@ -31,7 +32,7 @@ const Tabs = ({ car }) => {
           <p>{singleCar.price}</p>
           <p>{singleCar.rating}</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Buy Now</button>
+            <Link><button className="btn btn-primary">View Details</button></Link>
           </div>
         </div>
       </div>
