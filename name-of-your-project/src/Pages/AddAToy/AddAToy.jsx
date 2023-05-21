@@ -26,10 +26,10 @@ const AddAToy = () => {
       photo,
     };
     console.log(newToy);
-    form.reset();
+    // form.reset();
 
     // send data to the server
-    fetch("http://localhost:5000/postToys", {
+    fetch("http://localhost:5000/toys", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -169,7 +169,7 @@ const AddAToy = () => {
 
     <select name="select" className="mt-5 mb-20 bg-pink-500 rounded p-2">
         <option value="Sports Cars" className="bg-orange-300" >Sports Cars</option>
-        <option value="Off-Road Vehicles" className="bg-orange-100" >Off-Road Vehicles</option>
+        <option value="Truck" className="bg-orange-100" >Truck</option>
         <option value="Off-Road Vehicles" className="bg-orange-400" >Off-Road Vehicles</option>
       </select>
 

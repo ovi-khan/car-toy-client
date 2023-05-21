@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleLogOut = () => {
+    logOut()
+      .then()
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   const navItems = (
     <>
       <li>
@@ -11,14 +20,36 @@ const Navbar = () => {
         <Link to="/addatoy">Add A Toy</Link>
       </li>
       <li>
+        <Link to='/mytoys'>My Toys</Link>
+      </li>
+      <li>
         <Link to="/blogs">Blogs</Link>
       </li>
       <li>
         <Link to="/login">Login</Link>
       </li>
       <li>
+        {user?.email}
+      </li>
+      <li>
         <Link to="/signup">Sign Up</Link>
       </li>
+      {/* <li> */}
+        {user?.email ? (
+          <li>
+            <button
+            onClick={handleLogOut}
+            className="bg-slate-500 px-3 py-1 rounded-lg"
+          >
+            Log Out
+          </button>
+          </li>
+        ) : (
+          <Link className="ms-5" to="/login">
+            Log in
+          </Link>
+        )}
+      {/* </li> */}
     </>
   );
 
@@ -49,7 +80,9 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <Link to='/'><a className="btn btn-ghost normal-case text-3xl">Car Toy</a></Link>
+        <Link to="/">
+          <a className="btn btn-ghost normal-case text-3xl">Car Toy</a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
