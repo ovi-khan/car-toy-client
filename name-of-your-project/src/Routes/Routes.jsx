@@ -11,12 +11,14 @@ import LogIn from '../Pages/Login/LogIn';
 import SignUp from '../Pages/SignUp/SignUp';
 import PrivateRoute from './PrivateRoute';
 import MyToys from '../Pages/MyToys/MyToys';
+import ErrorPage from '../Pages/Home/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
             {
                 path: 'mytoys',
                 element: <MyToys></MyToys>,
-                loader: () => fetch('http://localhost:5000/toys')
+                loader: () => fetch('https://toy-marketplace-server-ovi-khan.vercel.app/toys')
             },
             {
                 path: 'login',

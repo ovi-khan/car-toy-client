@@ -29,7 +29,7 @@ const AddAToy = () => {
     // form.reset();
 
     // send data to the server
-    fetch("http://localhost:5000/toys", {
+    fetch("https://toy-marketplace-server-ovi-khan.vercel.app/toys", {
       method: "POST",
       headers: {
         "content-type": "application/json",

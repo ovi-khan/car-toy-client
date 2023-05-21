@@ -25,9 +25,9 @@ const Navbar = () => {
       <li>
         <Link to="/blogs">Blogs</Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="/login">Login</Link>
-      </li>
+      </li> */}
       <li>
         {user?.email}
       </li>
