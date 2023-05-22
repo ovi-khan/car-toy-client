@@ -56,7 +56,7 @@ function CategoryTab() {
           </div>
         </div>
       </div>
-      <div className="mx-48 mt-10">
+      <div className="lg:mx-48 mt-10 text-white">
         {carCategories?.map( car => 
           <Tabs 
           car={car}

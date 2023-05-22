@@ -50,13 +50,13 @@ const AddAToy = () => {
       });
   };
   return (
-    <div className="bg-[#F4F3F0] p-24">
+    <div className="bg-[#F4F3F0] lg:p-24 mt-10">
       <h2 className="text-5xl text-center font-bold text-blue-500">
         Toy added
       </h2>
       <form
         onSubmit={handleSubmit}
-        className="bg-indigo-600 p-10 w-[%] mx-auto mt-20  rounded-lg shadow-lg shadow-slate-200"
+        className="bg-indigo-600 lg:p-10 p-5 w-full mt-20  rounded-lg shadow-lg shadow-slate-200"
       >
         {/* Name and Seller */}
         <div className="md:flex gap-4">

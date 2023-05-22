@@ -1,4 +1,6 @@
 import React, { useContext } from "react";
+import logo from "../../../assets/logo1.png"
+import userImg from '../../../assets/user.png'
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
 
@@ -13,30 +15,30 @@ const Navbar = () => {
   };
   const navItems = (
     <>
-      <li>
+      <li className="hover:text-red-500">
         <Link to="/">Home</Link>
       </li>
-      <li>
+      <li className="hover:text-red-500">
         <Link to="/addatoy">Add A Toy</Link>
       </li>
-      <li>
+      <li className="hover:text-red-500">
         <Link to='/mytoys'>My Toys</Link>
       </li>
-      <li>
+      <li className="hover:text-red-500">
         <Link to="/blogs">Blogs</Link>
       </li>
       {/* <li>
         <Link to="/login">Login</Link>
       </li> */}
-      <li>
+      <li className="hover:text-red-500">
         {user?.email}
       </li>
-      <li>
+      <li className="hover:text-red-500">
         <Link to="/signup">Sign Up</Link>
       </li>
       {/* <li> */}
         {user?.email ? (
-          <li>
+          <li className="hover:text-red-500">
             <button
             onClick={handleLogOut}
             className="bg-slate-500 px-3 py-1 rounded-lg"
@@ -45,16 +47,18 @@ const Navbar = () => {
           </button>
           </li>
         ) : (
-          <Link className="ms-5" to="/login">
+          <li>
+            <Link className="ms-5" to="/login">
             Log in
           </Link>
+          </li>
         )}
       {/* </li> */}
     </>
   );
 
   return (
-    <div className="navbar bg-base-100 bg-rose-400 text-black">
+    <div className="navbar bg-base-100 bg-green-600 text-black">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -81,14 +85,16 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/">
-          <a className="btn btn-ghost normal-case text-3xl">Car Toy</a>
+          <a className="btn btn-ghost normal-case text-3xl">
+            <img className="w-14 h-14 rounded-lg object-cover bg-white" src={logo} alt="" />
+            </a>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Get started</a>
+        <img className="h-10 rounded-full" src={userImg} alt="" />
       </div>
     </div>
   );

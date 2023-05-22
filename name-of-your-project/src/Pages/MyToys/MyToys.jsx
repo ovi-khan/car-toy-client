@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Toys from './Toys';
 
 const MyToys = () => {
-    const allToys = useLoaderData()
+  const allToys = useLoaderData()
+  const [toys, setToys] = useState(allToys)
     
     console.log(allToys)
     return (
-        <div className="overflow-x-auto w-full ">
-  <table className="table w-full">
+        <div className="w-full">
+  <table className="w-full table">
     {/* head */}
     <thead>
       <tr>
@@ -20,7 +21,8 @@ const MyToys = () => {
         <th>Price</th>
         <th>Abilavil Quantity</th>
         <th>View Details</th>
-        <th></th>
+        <th>Update</th>
+        <th>Delete</th>
       </tr>
     </thead>
    
@@ -30,6 +32,8 @@ const MyToys = () => {
     allToys.map(toy => 
             <Toys
                 toy={toy}
+                toys={toys}
+                setToys={setToys}
                 key={toy._id}
             ></Toys>
         )
