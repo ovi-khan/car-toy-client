@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link to='/mytoys'>My Toys</Link>
       </li>
       <li className="hover:text-red-500">
-        <Link to="/blogs">Blogs</Link>
+        <Link to="/blog">Blogs</Link>
       </li>
       {/* <li>
         <Link to="/login">Login</Link>

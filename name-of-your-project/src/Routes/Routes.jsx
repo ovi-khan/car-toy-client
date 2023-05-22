@@ -12,6 +12,7 @@ import SignUp from '../Pages/SignUp/SignUp';
 import PrivateRoute from './PrivateRoute';
 import MyToys from '../Pages/MyToys/MyToys';
 import ErrorPage from '../Pages/Home/ErrorPage/ErrorPage';
+import Blog from '../Pages/Blog/Blog';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 element: <LogIn></LogIn>
+            },
+            {
+                path: 'blog',
+                element: <Blog></Blog>
             },
             {
                 path: 'signup',
