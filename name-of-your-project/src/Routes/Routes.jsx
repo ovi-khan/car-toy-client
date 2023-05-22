@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'mytoys',
-                element: <MyToys></MyToys>,
+                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>,
                 loader: () => fetch('https://toy-marketplace-server-ovi-khan.vercel.app/toys')
             },
             {
