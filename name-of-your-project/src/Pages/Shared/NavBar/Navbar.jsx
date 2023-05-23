@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../../../assets/logo1.png"
 import userImg from '../../../assets/user.png'
 import { Link } from "react-router-dom";
@@ -27,12 +27,7 @@ const Navbar = () => {
       <li className="hover:text-red-500">
         <Link to="/blog">Blogs</Link>
       </li>
-      {/* <li>
-        <Link to="/login">Login</Link>
-      </li> */}
-      <li className="hover:text-red-500">
-        {user?.email}
-      </li>
+
       <li className="hover:text-red-500">
         <Link to="/signup">Sign Up</Link>
       </li>
@@ -41,7 +36,7 @@ const Navbar = () => {
           <li className="hover:text-red-500">
             <button
             onClick={handleLogOut}
-            className="bg-slate-500 px-3 py-1 rounded-lg"
+            className="bg-slate-400 text-white px-3 py-1 rounded-lg"
           >
             Log Out
           </button>
@@ -93,9 +88,10 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
-      <div className="navbar-end">
-        <img className="h-10 rounded-full" src={userImg} alt="" />
-      </div>
+      {user && <div className="navbar-end">
+        <img className="h-10 rounded-full" src={user?.photoURL ? user?.photoURL : userImg} alt="" />
+      </div>}
+      {/* <p>{user}</p> */}
     </div>
   );
 };

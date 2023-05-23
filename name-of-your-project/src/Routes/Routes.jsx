@@ -13,6 +13,7 @@ import PrivateRoute from './PrivateRoute';
 import MyToys from '../Pages/MyToys/MyToys';
 import ErrorPage from '../Pages/Home/ErrorPage/ErrorPage';
 import Blog from '../Pages/Blog/Blog';
+import UpdateToy from '../Pages/UpdateToy/UpdateToy';
 
 
 const router = createBrowserRouter([
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: 'categoryTab',
                 element: <CategoryTab></CategoryTab>
+            },
+            {
+                path: 'updatetoy',
+                element: <UpdateToy></UpdateToy>
             },
             {
                 path: '/carDetails/:id',

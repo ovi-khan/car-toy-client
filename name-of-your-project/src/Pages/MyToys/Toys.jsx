@@ -1,12 +1,13 @@
 import Swal from 'sweetalert2'
 import { FaBeer } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Toys = ({ toy, toys, setToys }) => {
   
     const { _id, ToyName, sellerName, email, price, rating, quantity, description, select, photo  } = toy
 
-    const handleDelete = (_id) => {
-      console.log(_id);
+    const handleDelete = (id) => {
+      console.log('delete',id);
       Swal.fire({
         title: "Are you sure?",
         text: "You won't be able to revert this!",
@@ -17,7 +18,7 @@ const Toys = ({ toy, toys, setToys }) => {
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`https://toy-marketplace-server-ovi-khan.vercel.app/toys/${_id}`, {
+          fetch(`https://toy-marketplace-server-ovi-khan.vercel.app/toys/${id}`, {
             method: 'DELETE'
           })
             .then((res) => res.json())
@@ -68,7 +69,9 @@ const Toys = ({ toy, toys, setToys }) => {
           {description}
         </td>
         <th>
-          <button className="btn btn-ghost btn-xs">Update</button>
+          <Link to={`/updatetoy/${_id}`}>
+          <button onClick className="btn btn-ghost btn-xs">Update</button>
+          </Link>
         </th>
         <th>
           <button onClick={handleDelete} className="btn bg-white text-red-600 btn-xs"><FaBeer /></button>

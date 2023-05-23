@@ -14,6 +14,19 @@ const SignUp = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, email, password);
+    if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+      setError("password not valid need 8 char ");
+      return;
+    }
+    if ((name, email, password)) {
+      registerUser(email, password)
+        .then((result) => {
+          console.log(result.user);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
 
     createUser(email, password)
     .then(result => {
